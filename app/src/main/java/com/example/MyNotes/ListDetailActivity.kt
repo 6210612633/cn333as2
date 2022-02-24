@@ -16,9 +16,7 @@ class ListDetailActivity : AppCompatActivity() {
 
     lateinit var list: TaskList
     lateinit var binding: ListDetailActivityBinding
-    //private lateinit var binding: ListDetailFragmentBinding
     private lateinit var noteContent : EditText
-    //private lateinit var showContent: TextView
     lateinit var sharedPreference: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,7 +57,6 @@ class ListDetailActivity : AppCompatActivity() {
         noteContent.setText(edited)
         val editor:SharedPreferences.Editor = sharedPreference.edit()
         editor.putString(list.name,edited).apply()
-
 
         super.onBackPressed()
     }
