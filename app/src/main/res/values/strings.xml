@@ -2,4 +2,5 @@
     <string name="app_name">My Notes</string>
     <string name="name_of_list">what is the name of list?</string>
     <string name="create_list">add</string>
+    <string name="hint">Input here</string>
 </resources>
